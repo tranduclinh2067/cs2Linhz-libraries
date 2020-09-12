@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACZ",
+    "sources": [
+        "../scss/cs2linh.scss",
+        "../scss/_reboot.scss",
+        "../scss/_abc.scss"
+    ],
+    "names": [],
+    "file": "cs2linh.css"
+}
