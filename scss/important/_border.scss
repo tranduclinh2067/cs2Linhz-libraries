@@ -1,0 +1,27 @@
+.brr {
+    @include border_ (full);
+}
+.brr-x {
+    @include border_ (x);
+}
+.brr-y {
+    @include border_ (y);
+}
+.brr-lt {
+    @include border_ (lt);
+}
+.brr-tr {
+    @include border_ (tr);
+}
+.brr-rb {
+    @include border_ (rb);
+}
+.brr-bl {
+    @include border_ (bl);
+}
+.brra {
+    @include border_ra($brra);
+}
+.brra9 {
+    @include border_ra($brra9);
+}

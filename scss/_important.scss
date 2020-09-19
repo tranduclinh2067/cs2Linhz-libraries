@@ -1,2 +1,14 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+// Thừa hưởng thuộc tính từ thành phần cha.
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @import './important/color';
-@import './important/values';
+@import './important/border';

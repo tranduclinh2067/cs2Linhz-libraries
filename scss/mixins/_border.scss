@@ -1,0 +1,33 @@
+@mixin border_ ($positions, $wight:thin, $type:solid, $color:$clr-black) {
+    @if $positions == 'full' {
+        border: $wight $type $color;
+    }
+    @else if $positions == 'x' {
+        border-left: $wight $type $color; 
+        border-right: $wight $type $color;
+    }
+    @else if $positions == 'y' {
+        border-top: $wight $type $color; 
+        border-bottom: $wight $type $color;
+    }
+    @else if $positions == 'lt' {
+        border-left: $wight $type $color; 
+        border-top: $wight $type $color;
+    }
+    @else if $positions == 'tr' {
+        border-top: $wight $type $color; 
+        border-right: $wight $type $color;
+    }
+    @else if $positions == 'rb' {
+        border-top: $wight $type $color; 
+        border-right: $wight $type $color;
+    }
+    @else if $positions == 'bl' {
+        border-top: $wight $type $color; 
+        border-right: $wight $type $color;
+    }
+};
+
+@mixin border_ra ($radius) {
+    border-radius: $radius;
+}

@@ -1,0 +1,9 @@
+.con {
+    width: 800px;
+    background: red;
+    height: 200px;
+    padding: 0 15px 0 15px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}

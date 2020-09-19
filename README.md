@@ -1,12 +1,13 @@
 ### cs2Linhz (css-Linhz)...
 
+This is a library of Tran Duc Linh.
 
-Thiết kế đơn giản, mô phỏng khi dựng các dự án demo và phân lập các layout.
+Simple design, used to simulate demo projects and to isolate layouts
 
-Thư viện chứa dãi màu từ #fff đến #000 (11 màu).
+*Version: 0.0x190820-DESKTOP-T3OOG9M-HOME-build*
 
-Cấu trúc thư mục.
+Directory structure.
 
 ![asd](/cache/readme.png)
 
-*(update theo từng commit...)*
+*(update for each commit...)*
