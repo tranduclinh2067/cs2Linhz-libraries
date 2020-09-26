@@ -1,0 +1,15 @@
+@mixin space_ ($perfixs) {
+    // @if $spaces == 0 {
+        
+    // }
+    // List => String
+
+    @for $i from 1 through 6 {
+        $ids: nth($perfixs, $i); 
+        .mrn-#{$ids} {
+            margin: 0;
+        } 
+    }
+
+}
+

@@ -1,6 +1,9 @@
 // Support Browser
 $vendorPrefixes: (-webkit-, -moz-, -khtml-, -o-, -ms-);
 
+// Prefix a-z
+$perfixs: 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z';
+
 // (F)ont (s)i(z)e tag h1 to h6
 
 $fsz-default: 1rem !default;
@@ -21,3 +24,8 @@ $fsz-h6: nth($fsz, 6) * $fsz_default !default;
 $brra: 10px;
 $brra9: 999px;
 
+// Display
+$dpy-list: block, flex, inline, inline-block, flex, none;
+
+// Space (margin + padding)
+$space: 2px;

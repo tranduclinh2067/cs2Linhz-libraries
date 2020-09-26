@@ -1,0 +1,7 @@
+@mixin display_ ($types) {
+    @each $type in $types {
+        .dpy-#{$type} {
+            display: $type;
+        }
+    }
+}
