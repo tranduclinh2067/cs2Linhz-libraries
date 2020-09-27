@@ -1,15 +1,33 @@
-@mixin space_ ($perfixs) {
+@mixin space_ ($class-method, $name-method, $space-item, $perfixs) {
     // @if $spaces == 0 {
         
     // }
     // List => String
-
-    @for $i from 1 through 6 {
-        $ids: nth($perfixs, $i); 
-        .mrn-#{$ids} {
-            margin: 0;
-        } 
+    @for $i from 0 through 5 {
+        $ids: nth($perfixs, $i + 1); 
+        #{$class-method}-#{$ids} {
+            #{$name-method}: $space-item * $i;
+        }
+        #{$class-method}-x-#{$ids} {
+            #{$name-method}-left: $space-item * $i;
+            #{$name-method}-right: $space-item * $i;
+        }
+        #{$class-method}-y-#{$ids} {
+            #{$name-method}-top: $space-item * $i;
+            #{$name-method}-bottom: $space-item * $i;
+        }
+        #{$class-method}-t-#{$ids} {
+            #{$name-method}-top: $space-item * $i;
+        }
+        #{$class-method}-l-#{$ids} {
+            #{$name-method}-left: $space-item * $i;
+        }
+        #{$class-method}-b-#{$ids} {
+            #{$name-method}-bottom: $space-item * $i;
+        }
+        #{$class-method}-l-#{$ids} {
+            #{$name-method}-left: $space-item * $i;
+        }
     }
-
 }
 
