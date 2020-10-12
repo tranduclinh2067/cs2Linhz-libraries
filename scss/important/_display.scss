@@ -1,1 +1,3 @@
+$dpy-list: (block, flex, inline, inline-block, inline-flex, grid, none);
+
 @include display_ ($dpy-list);

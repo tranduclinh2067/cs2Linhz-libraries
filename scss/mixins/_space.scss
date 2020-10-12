@@ -1,4 +1,4 @@
-@mixin space_ ($class-method, $name-method, $space-item, $perfixs) {
+@mixin space_ ($class-method, $name-method, $space-item, $perfixs, $perfixs-auto) {
     // @if $spaces == 0 {
         
     // }
@@ -28,6 +28,11 @@
         #{$class-method}-l-#{$ids} {
             #{$name-method}-left: $space-item * $i;
         }
+    }
+
+    #{$class-method}-x-#{$perfixs-auto} {
+        #{$name-method}-left: $perfixs-auto;
+        #{$name-method}-right: $perfixs-auto;
     }
 }
 

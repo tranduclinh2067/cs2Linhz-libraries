@@ -1,2 +1,2 @@
-@include space_ ('.mrn', 'margin' ,$space-item, $perfixs);
-@include space_ ('.pdg', 'padding' ,$space-item, $perfixs);
+@include space_ ('.mrn', 'margin' ,$space-item, $perfixs, $perfixs-auto);
+@include space_ ('.pdg', 'padding' ,$space-item, $perfixs, $perfixs-auto);

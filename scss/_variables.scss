@@ -1,8 +1,11 @@
 // Support Browser
-$vendorPrefixes: (-webkit-, -moz-, -khtml-, -o-, -ms-);
+$vendorPrefixes: -webkit-, -moz-, -khtml-, -o-, -ms-;
 
 // Prefix a-z
 $perfixs: 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z';
+
+// Space 'auto'
+$perfixs-auto: auto;
 
 // (F)ont (s)i(z)e tag h1 to h6
 
@@ -30,3 +33,11 @@ $dpy-list: block, flex, inline, inline-block, flex, none;
 // Space (margin + padding)
 $space: 2px;
 $space-item: 4px;
+
+// Flex - Row - Col - 12
+// (C)o(l)um(n)s
+$CLN_12: percentage(100/1200);
+$GUTTER: 0 15px;
+
+// justify-content
+$jty-content: ("start": flex-start, "end": flex-end, "center": center, "between": space-between, "around": space-around, "stretch": stretch, "evenly": space-evenly);

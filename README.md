@@ -4,7 +4,7 @@ This is a library of Tran Duc Linh.
 
 Simple design, used to simulate demo projects and to isolate layouts
 
-*Version: 0.2x270920-DESKTOP-T3OOG9M-HOME-build*
+*Version: 0.3x121020-DESKTOP-UBUNTU20.04.1.LTS-HOME-build*
 
 Directory structure.
 

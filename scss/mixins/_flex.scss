@@ -1,0 +1,26 @@
+@mixin flex_ ($number-cln, $gutter, $contents-map) {
+    @for $i from 1 through 12 {
+        .cln-#{$i} {
+            width: $number-cln * $i;
+        }
+    }
+    
+    [class*="cln-"] {
+        // float: left;
+        padding: $gutter;
+    }
+    
+    .row {
+        display: flex;
+        // &::after {
+        //     content: "";
+        //     clear: both;
+        // }
+    }
+
+    @each $var, $content in $contents-map {
+        .jty-#{$var} {
+            justify-content: $content;
+        }
+    }
+}
