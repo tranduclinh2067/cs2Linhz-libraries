@@ -1,4 +1,4 @@
-@mixin flex_ ($number-cln, $gutter, $contents-map) {
+@mixin flex_ ($number-cln, $gutter, $contents-map, $align-item-map, $align-content-map) {
     @for $i from 1 through 12 {
         .cln-#{$i} {
             width: $number-cln * $i;
@@ -6,16 +6,12 @@
     }
     
     [class*="cln-"] {
-        // float: left;
         padding: $gutter;
     }
     
     .row {
         display: flex;
-        // &::after {
-        //     content: "";
-        //     clear: both;
-        // }
+        flex-direction: row;
     }
 
     @each $var, $content in $contents-map {
@@ -23,4 +19,36 @@
             justify-content: $content;
         }
     }
+
+    @each $var, $align-item in $align-item-map {
+        .ain-i-#{$var} {
+            align-items: $align-item;
+        }
+    }
+
+    @each $var, $align-content in $align-content-map {
+        .ain-c-#{$var} {
+            align-content: $align-content;
+        }
+    }
+
+    .flx-re {
+        flex-direction: row-reverse !important;
+    }
+
+    .flx-cln {
+        flex-direction: column !important;
+    }
+
+    .flx-cln-re {
+        flex-direction: column-reverse !important;
+    }
+    .flx-wrap {
+        flex-wrap: wrap;
+    }
+    .flx-wrap-re {
+        flex-wrap: wrap-reverse;
+    }
+
+
 }

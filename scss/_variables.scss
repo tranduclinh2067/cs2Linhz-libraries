@@ -39,5 +39,11 @@ $space-item: 4px;
 $CLN_12: percentage(100/1200);
 $GUTTER: 0 15px;
 
-// justify-content
+// (j)us(t)if(y)-(content)
 $jty-content: ("start": flex-start, "end": flex-end, "center": center, "between": space-between, "around": space-around, "stretch": stretch, "evenly": space-evenly);
+
+// (a)l(i)g(n)-(items)
+$ain-item: ("center": center, "start": flex-start, "end": flex-end, "baseline": baseline);
+
+// (a)l(i)g(n)-(content)
+$ain-content: ("between": space-between, "around": space-around, "center": center, "start": flex-start, "end": flex-start);
